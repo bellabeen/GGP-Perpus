@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/tvPleaseLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Please Login!"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/edt_indeks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPleaseLogin"
+        android:layout_marginTop="25dp"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:drawablePadding="24dp"
+        android:hint="Indeks" />
+
+    <EditText
+        android:id="@+id/edt_kataSandi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_indeks"
+        android:layout_marginTop="12dp"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="24dp"
+        android:hint="Kata Sandi"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_below="@id/edt_kataSandi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"/>
+
+    <TextView
+        android:id="@+id/tvCreateAccount"
+        android:layout_below="@id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Create New Account"/>
+
+</RelativeLayout>

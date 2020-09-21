@@ -1,47 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="25dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".LoginActivity">
 
-    <TextView
-        android:id="@+id/tvPleaseLogin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:text="Please Login!"
-        android:textSize="24sp"/>
+    <!--        app:srcCompat="@drawable/logo-perpus" />-->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/perpus" />
 
     <EditText
         android:id="@+id/edt_indeks"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tvPleaseLogin"
-        android:layout_marginTop="25dp"
-        android:drawableStart="@drawable/ic_baseline_person_24"
-        android:drawablePadding="24dp"
-        android:hint="Indeks" />
+        android:layout_width="325dp"
+        android:layout_height="65dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:hint="  Nomer Indek Karyawan"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:drawableLeft="@drawable/ic_assignment_ind_black_24dp"/>
 
     <EditText
         android:id="@+id/edt_kataSandi"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="325dp"
+        android:layout_height="65dp"
         android:layout_below="@+id/edt_indeks"
-        android:layout_marginTop="12dp"
-        android:drawableStart="@drawable/ic_baseline_lock_24"
-        android:drawablePadding="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+        android:drawableRight="@drawable/ic_visibility_black_24dp"
+        android:ems="10"
         android:hint="Kata Sandi"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="218dp" />
 
     <Button
         android:id="@+id/btn_login"
-        android:layout_below="@id/edt_kataSandi"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login"/>
+        android:layout_below="@+id/edt_kataSandi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:text="Masuk"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="314dp" />
 
     <TextView
         android:id="@+id/tvCreateAccount"
@@ -49,6 +59,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
-        android:text="Create New Account"/>
+        android:text="Belum punya akun? Silakan Daftar"/>
+
+<!--    <TextView-->
+<!--        android:layout_below="@+id/btn_login"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Belum punya akun? Silahkan Daftar"-->
+<!--        android:textAlignment="center"/>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_Daftar"-->
+<!--        android:layout_below="@+id/btn_login"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Daftar"-->
+<!--        tools:layout_editor_absoluteX="124dp"-->
+<!--        tools:layout_editor_absoluteY="314dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_centerHorizontal="true"/>-->
 
 </RelativeLayout>
